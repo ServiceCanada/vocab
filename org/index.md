@@ -14,8 +14,10 @@ List of Governement of Canada organizations based on the Finanial Administration
 |rdfs:|http://www.w3.org/2000/01/rdf-schema#|[RDF Schema](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/)|
 |owl:|http://www.w3.org/2002/07/owl#|[Web Ontology Language](https://www.w3.org/TR/owl2-overview/)|
 |dct:|http://purl.org/dc/terms/|[Dublin Core - DCMI Metadata Term](http://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+|schema:|http://schema.org|[Schema.org](https://schema.org/)
+|pav:|http://purl.org/pav/|[PAV - Provenance, Authoring and Versioning](https://pav-ontology.github.io/pav/)
 
-## Ministerial departments
+## Ministerial departments {#ministere}
 
 Ministerial departments are established through legislation and included under Schedule I of the FAA.
 
@@ -25,7 +27,7 @@ gc-org:ministere
 	a skos:Collection ;
 	owl:sameAs gc-org:ministerial ;
 	skos:member
-		gc-org:fegc-wage, gc-org:aac-aafc ;
+		gc-org:fegc-wage, gc-org:aac-aafc, gc-org:pch ;
 	rdfs:label "Ministères"@fr ;
 	rdfs:label "Ministerial departments"@en ;
 	skos:scopeNote "Créés par voie législative et figurent à l'annexe I de la LGFP"@fr .
@@ -33,7 +35,7 @@ gc-org:ministere
 
 
 
-### Term name: ```#fegc-wage``` or ```#wage-fegc```
+### Term name: ```#fegc-wage``` or ```#wage-fegc``` {#fegc-wage}
 
 * **URI:** http://vocab.canada.ca/org/#fegc-wage
 * **Alternate URI:** http://vocab.canada.ca/org/#wage-fegc
@@ -43,7 +45,7 @@ gc-org:ministere
 <details>
 <summary>View all details in Turtle notation</summary>
 
-```
+<pre><code>
 gc-org:fegc-wage
 	a skos:Concept ;
 	owl:sameAs gc-org:wage-fegc ;
@@ -54,13 +56,13 @@ gc-org:fegc-wage
 	skos:prefLabel "Women and Gender Equality Canada"@en ;
 	foaf:homepage "https://cfc-swc.gc.ca" .
 
-```
+</code></pre>
 
 </details>
 
 
 
-### Term name: ```#aac-aafc``` or ```#aafc-aac```
+### Term name: ```#aac-aafc``` or ```#aafc-aac``` {#aac-aafc}
 
 * **URI:** http://vocab.canada.ca/org/#aac-aafc
 * **Alternate URI:** http://vocab.canada.ca/org/#aafc-aac
@@ -70,7 +72,7 @@ gc-org:fegc-wage
 <details>
 <summary>View all details in Turtle notation</summary>
 
-```
+<pre><code>
 gc-org:aac-aafc
 	a skos:Concept ;
 	owl:sameAs gc-org:aafc-aac ;
@@ -79,10 +81,33 @@ gc-org:aac-aafc
 	rdfs:label "Department of Agriculture and Agri-Food"@en ;
 	skos:prefLabel "Agriculture et Agroalimentaire Canada"@fr ;
 	skos:prefLabel "Agriculture and Agri-Food Canada"@en .
-```
+</code></pre>
 
 </details>
 
+
+### Term name: ```#pch``` {#pch}
+
+* **URI:** http://vocab.canada.ca/org/#pch
+* **Preferred label (fr):** Patrimoine canadien
+* **Preferred label (en):** Canadian Heritage
+
+<details>
+<summary>View all details in Turtle notation</summary>
+
+<pre><code>
+gc-org:pch
+	a skos:Concept, schema:GovernmentOrganization ;
+	pav:hasCurrentVersion http://vocab.canada.ca/org/his/#3 ;
+	rdfs:label "Ministère du Patrimoine canadien"@fr ;
+	rdfs:label "Department of Canadian Heritage"@en ;
+	skos:prefLabel "Patrimoine canadien"@fr ;
+	skos:prefLabel "Canadian Heritage"@en ;
+	skos:altLabel "pch" ;
+	pav:version "1.0.0" .
+</code></pre>
+
+</details>
 
 
 ## To be continued...
@@ -90,10 +115,7 @@ gc-org:aac-aafc
 Helper document: https://docs.google.com/spreadsheets/d/1-MR5M1tPsRjDdMxY3fMayuVT2N1PiiGX-lfY6JxkqBA/edit#gid=1344881190
 
 Need to define the case when a naming/reference changes or get deprecated
-Need to define how to manage naming collision/ambiguity - https://www.w3.org/2002/12/rdf-identifiers/, dcterms:hasVersion, dcterm:identifier, dcterm:isReplacedBy
-
-Department of Canadian Heritage
-Ministère du Patrimoine canadien
+Need to define how to manage naming collision/ambiguity - https://www.w3.org/2002/12/rdf-identifiers/, dcterms:hasVersion, dcterm:identifier, dcterm:isReplacedBy, pav:hasCurrentVersion, pav:version
 
 Department of Citizenship and Immigration
 Ministère de la Citoyenneté et de l’Immigration
