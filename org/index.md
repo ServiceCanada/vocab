@@ -8,7 +8,7 @@ List of Governement of Canada organizations based on the Finanial Administration
 
 |Prefix|Namespace|Reference|
 |------|---------|---------|
-|gc-org:|http://vocab.canada.ca/institution/#|*This document*|
+|gc-org:|http://vocab.canada.ca/org#|*This document*|
 |skos:|http://www.w3.org/2004/02/skos/core#|[Simple Knowledge Organization System](https://www.w3.org/TR/skos-reference/)|
 |rdf:|http://www.w3.org/1999/02/22-rdf-syntax-ns#|[Resource Description Framework](https://www.w3.org/TR/rdf11-primer/)|
 |rdfs:|http://www.w3.org/2000/01/rdf-schema#|[RDF Schema](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/)|
