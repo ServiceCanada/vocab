@@ -29,7 +29,7 @@ Vocabulary use by the Manage Web Service at Service Canada by Principal Publishe
 	<dt>Expected use of <code>https://vocab.canada.ca/web/mws#program</code> property</dt>
 	<dd>Recommended practice is to use a controlled vocabulary where available as its value.</dd>  
 	<dt>Usage note</dt>
-	<dd property="vann:usageNote">Use on Canada.ca to identify program, the controlled vocabulary is managed in the web content management system, the value basepath are <code>https://www.canada.ca/tags/custom/[[ Department ]]/[[ branch ]]/[[ program ]]</code>. Example an un-transformed value from MWS: gc:custom/decd-endc/alert-type </dd>
+	<dd property="vann:usageNote">Use on Canada.ca to identify program, the controlled vocabulary is managed in the web content management system, the value basepath are <code>[[ Department ]]/[[ branch ]]/[[ program ]]</code>. Example an un-transformed value from MWS: gc:custom/subject-matter-expert/esdc/branch/program </dd>
   </dl>
 </section>
 
