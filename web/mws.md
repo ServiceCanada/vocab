@@ -8,7 +8,7 @@ title: Manage Web Service - Web
 Vocabulary use by the Manage Web Service at Service Canada by Principal Publisher.
 
 
-<section id="AttachmentHtml" resource="#program" typeof="rdf:Property">
+<section id="program" resource="#program" typeof="rdf:Property">
   <h4>Program (Property)</h4>
   <p>(<strong>State:</strong> <em>Stable</em>)</p>
   <p>Property - Represent a program under the page creator (<code>dcterms.creator</code>) that is the internal subject matter expert.</p>
